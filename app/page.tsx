@@ -18,6 +18,7 @@ export default function Home() {
               muted
               loop
               playsInline
+              preload="auto"
             />
           </MediaWithFade>
 
