@@ -1,17 +1,58 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import HeroOverlay from "./components/HeroOverlay";
 import ImageTextCTASection from "./components/ImageTextCTASection";
 import MediaWithFade from "./components/MediaWithFade";
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    let retryTimer: number | undefined;
+
+    const attemptPlay = () => {
+      const playPromise = video.play();
+
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {
+          retryTimer = window.setTimeout(() => {
+            attemptPlay();
+          }, 300);
+        });
+      }
+    };
+
+    const handleReady = () => {
+      attemptPlay();
+    };
+
+    retryTimer = window.setTimeout(() => {
+      handleReady();
+    }, 300);
+
+    video.addEventListener("loadeddata", handleReady);
+    video.addEventListener("canplay", handleReady);
+
+    return () => {
+      if (retryTimer) {
+        window.clearTimeout(retryTimer);
+      }
+      video.removeEventListener("loadeddata", handleReady);
+      video.removeEventListener("canplay", handleReady);
+    };
+  }, []);
+
   return (
     <main className="flex w-full flex-1 flex-col justify-center px-0 py-0">
       <section className="w-full space-y-2">
         <div className="relative">
           <MediaWithFade topFade={false} bottomFade={true} bottomFadeHeight="h-[800px]">
             <video
+              ref={videoRef}
               className="block w-full"
               src="https://storage.googleapis.com/videos4web/SVTrailer2026.mp4"
               autoPlay
