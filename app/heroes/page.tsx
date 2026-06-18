@@ -27,9 +27,9 @@ const classIconPaths: Record<string, string> = {
 };
 
 const attackIconPaths: Record<string, string> = {
-  Energy: "/herodata/dmgicon/energy.png",
-  Arcane: "/herodata/dmgicon/arcane.png",
-  Explosive: "/herodata/dmgicon/explosive.png",
+  Energy: "/herodata/dmgicon/Energy.png",
+  Arcane: "/herodata/dmgicon/Arcane.png",
+  Explosive: "/herodata/dmgicon/Explosive.png",
 };
 
 export default function HeroesPage() {
