@@ -1,0 +1,301 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Lt C.Jones",
+      "faction": "SI-9",
+      "class": "Support",
+
+      "story_short": "At 25, Lt. Catherine Jones was a rising star in SI-9’s technical support unit — loyal, precise, and still clinging to the belief she was fighting for humanity’s good. That changed on her last mission. Her team stormed a dictator’s palace on a distant colony, tasked with eliminating him and his bloodline. ",
+      "story_long": "At 25, Lt. Catherine Jones was a rising star in SI-9’s technical support unit — loyal, precise, and still clinging to the belief she was fighting for humanity’s good. That changed on her last mission. Her team stormed a dictator’s palace on a distant colony, tasked with eliminating him and his bloodline. A moment of hesitation from her commander cost them two teammates. Catherine didn’t flinch — she pulled the trigger and ended the mission with a perfect shot to the dictator’s head. Her actions earned top marks and praise from command. But it broke something inside. Sent to a resort planet for psychological recovery, she was blindsided when recalled early for the temple operation. No time to rest. No time to heal. Orders are orders — and Catherine always follows through.",
+
+      "stats": {
+        "attack_type": "Energy",
+        "speed": 7,
+        "armor": 8,
+        "damage": 5
+      },
+
+      "primary_attack": {
+        "name": "Energy Gun",
+        "description": "Fires fast-moving energy projectiles. Reliable ranged damage for keeping pressure on enemies from a safe distance."
+      },
+
+      "skills": [
+        {
+          "name": "Shield Recharge",
+          "description": "Gradually restores energy shields of nearby allies. Great for sustaining your team during extended fights."
+        },
+        {
+          "name": "Block Shield",
+          "description": "Deploys a stationary energy barrier on the battlefield. Use it for cover or to block enemy movement and fire."
+        },
+        {
+          "name": "Stun Grenade",
+          "description": "Explodes on impact, dealing damage and stunning all enemies in the blast radius — doesn’t affect buildings."
+        }
+      ],
+
+      "mastery": [
+        ["Increase shield durability", "Increase ammo capacity"],
+        ["Increase shield size", "Increase shooting speed"],
+        ["Increase grenade range", "Decrease grenade cooldown"]
+      ]
+
+    },
+
+    {
+      "id": 2,
+      "name": "Artheya",
+      "faction": "SI-9",
+      "class": "Damage Dealer",
+
+      "story_short": "A",
+      "story_long": "A",
+
+      "stats": {
+        "attack_type": "Arcane",
+        "speed": 1,
+        "armor": 1,
+        "damage": 1
+      },
+
+      "primary_attack": {
+        "name": "A",
+        "description": "A"
+      },
+
+      "skills": [
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        }
+      ],
+      
+        "mastery": [
+            ["A", "A"],
+            ["A", "A"],
+            ["A", "A"]
+        ]
+    },
+
+    {
+      "id": 3,
+      "name": "Neiderhorn",
+      "faction": "SI-9",
+      "class": "Tank",
+
+      "story_short": "A",
+      "story_long": "A",
+
+      "stats": {
+        "attack_type": "Explosive",
+        "speed": 1,
+        "armor": 1,
+        "damage": 1
+      },
+
+      "primary_attack": {
+        "name": "A",
+        "description": "A"
+      },
+
+      "skills": [
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        }
+      ],
+        "mastery": [
+            ["A", "A"],
+            ["A", "A"],
+            ["A", "A"]
+        ]
+    },
+
+     {
+      "id": 4,
+      "name": "HBV",
+      "faction": "SI-9",
+      "class": "Tank",
+
+      "story_short": "A",
+      "story_long": "A",
+
+      "stats": {
+        "attack_type": "Explosive",
+        "speed": 1,
+        "armor": 1,
+        "damage": 1
+      },
+
+      "primary_attack": {
+        "name": "A",
+        "description": "A"
+      },
+
+      "skills": [
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        }
+      ],
+        "mastery": [
+            ["A", "A"],
+            ["A", "A"],
+            ["A", "A"]
+        ]
+    },
+
+     {
+      "id": 5,
+      "name": "Lt C.Jones",
+      "faction": "SI-9",
+      "class": "Support",
+
+      "story_short": "A",
+      "story_long": "A",
+
+      "stats": {
+        "attack_type": "A",
+        "speed": 1,
+        "armor": 1,
+        "damage": 1
+      },
+
+      "primary_attack": {
+        "name": "A",
+        "description": "A"
+      },
+
+      "skills": [
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        }
+      ],
+        "mastery": [
+            ["A", "A"],
+            ["A", "A"],
+            ["A", "A"]
+        ]
+    },
+
+     {
+      "id": 6,
+      "name": "Lt C.Jones",
+      "faction": "SI-9",
+      "class": "Support",
+
+      "story_short": "A",
+      "story_long": "A",
+
+      "stats": {
+        "attack_type": "A",
+        "speed": 1,
+        "armor": 1,
+        "damage": 1
+      },
+
+      "primary_attack": {
+        "name": "A",
+        "description": "A"
+      },
+
+      "skills": [
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        },
+        {
+          "name": "A",
+          "description": "A"
+        }
+      ],
+        "mastery": [
+            ["A", "A"],
+            ["A", "A"],
+            ["A", "A"]
+        ]
+    },
+        {
+        "id": 7,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        }
+
+    
+  ]
+}
