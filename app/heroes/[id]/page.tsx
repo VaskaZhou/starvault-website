@@ -40,9 +40,9 @@ const classIconPaths: Record<string, string> = {
 };
 
 const attackIconPaths: Record<string, string> = {
-  Energy: "/herodata/dmgicon/energy.png",
-  Arcane: "/herodata/dmgicon/arcane.png",
-  Explosive: "/herodata/dmgicon/explosive.png",
+  Energy: "/herodata/dmgicon/Energy.png",
+  Arcane: "/herodata/dmgicon/Arcane.png",
+  Explosive: "/herodata/dmgicon/Explosive.png",
 };
 
 function StatBar({
@@ -136,7 +136,7 @@ export default function HeroDetailsPage() {
                 <p className="text-white/60">Attack Type</p>
                 <div className="mt-1 flex items-center gap-2">
                   <img
-                    src={attackIconPaths[hero.stats.attack_type] ?? "/herodata/dmgicon/energy.png"}
+                    src={attackIconPaths[hero.stats.attack_type] ?? "/herodata/dmgicon/Energy.png"}
                     alt={`${hero.stats.attack_type} icon`}
                     className="h-6 w-6 object-contain"
                   />
