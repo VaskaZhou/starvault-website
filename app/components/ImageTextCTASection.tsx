@@ -37,19 +37,23 @@ export default function ImageTextCTASection({
   overlayClassName = "",
 }: ImageTextCTASectionProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
+    if (!isImageLoaded) return;
+
+    let observer: IntersectionObserver | undefined;
     const timer = window.setTimeout(() => {
       requestAnimationFrame(() => {
         const node = titleRef.current;
         if (!node) return;
 
-        const observer = new IntersectionObserver(
+        observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
               setIsVisible(true);
-              observer.disconnect();
+              observer?.disconnect();
             }
           },
           {
@@ -60,10 +64,13 @@ export default function ImageTextCTASection({
 
         observer.observe(node);
       });
-    }, 200);
+    }, 120);
 
-    return () => window.clearTimeout(timer);
-  }, []);
+    return () => {
+      window.clearTimeout(timer);
+      observer?.disconnect();
+    };
+  }, [isImageLoaded]);
 
   const resolvedButtons =
     buttons.length > 0
@@ -75,7 +82,13 @@ export default function ImageTextCTASection({
   return (
     <section className="relative mt-0">
       <MediaWithFade topFade={topFade} bottomFade={bottomFade}>
-        <img src={imageSrc} alt={imageAlt} className="block w-full" />
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className="block w-full"
+          onLoad={() => setIsImageLoaded(true)}
+          onError={() => setIsImageLoaded(true)}
+        />
       </MediaWithFade>
 
       <div
