@@ -1,17 +1,44 @@
+import ImageTextCTASection from "../components/ImageTextCTASection";
+
 export default function CommunityPage() {
   return (
-    <div className="mx-auto flex min-h-[calc(100vh-73px)] max-w-5xl items-center px-6 py-16">
-      <div className="max-w-2xl rounded-3xl border border-white/10 bg-zinc-900 p-10 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-400">
-          Community
-        </p>
-        <h1 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
-          Join Our Community
-        </h1>
-        <p className="mt-4 text-lg leading-8 text-gray-300">
-          Connect with fellow players, share your experiences, and be part of the vibrant StarVault community. Join us on Discord, Twitter, and other social platforms.
-        </p>
-      </div>
-    </div>
+    <main className="flex w-full flex-1 flex-col justify-center px-0 py-0">
+      <section className="w-full space-y-2">
+        <ImageTextCTASection
+          imageSrc="/mainpage/image/TournamentPosterbg.png"
+          imageAlt="Titan Arena"
+          title="Tournament #4: Hostile Titan Inbound"
+          description="Race for the Next Championship."
+          buttonLabel="Sign Up Now"
+          buttonHref="https://discord.com/invite/starvaultvr"
+          contentAlign="left"
+          topFade={false}
+        />
+
+        <ImageTextCTASection
+          imageSrc="/mainpage/image/SmithNight.png"
+          imageAlt="Heroes"
+          title="Creator Program"
+          description="Get special access & unique perks"
+          buttons={[
+            { label: "Join Program", href: "https://docs.google.com/forms/d/e/1FAIpQLSeMybkBE7i8CuljngQlQcrxru3C6t7klvFoIIIQ8ctjzHoM9Q/viewform?usp=sharing&ouid=101967005538578431279" },
+            { label: "Creator Kit", href: "https://drive.google.com/drive/folders/1kFXrvGUwdOO08bAIZWEDMGjMxJRfW0Ub?usp=sharing" },
+          ]}
+          contentAlign="right"
+          overlayBottomClassName = "bottom-18"
+        />
+
+        <ImageTextCTASection
+          imageSrc="/mainpage/image/TitanArena2.jpg"
+          imageAlt="Titan Arena"
+          title="Join the Community"
+          description="Find your place among fellow gamers."
+          buttonLabel="Starvault Discord"
+          buttonHref="https://discord.com/invite/starvaultvr"
+          contentAlign="left"
+          overlayBottomClassName = "bottom-2"
+        />
+      </section>
+    </main>
   );
 }
