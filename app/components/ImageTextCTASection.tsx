@@ -39,6 +39,13 @@ export default function ImageTextCTASection({
   const [isVisible, setIsVisible] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imageRef.current?.complete) {
+      setIsImageLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (!isImageLoaded) return;
@@ -83,6 +90,7 @@ export default function ImageTextCTASection({
     <section className="relative mt-0">
       <MediaWithFade topFade={topFade} bottomFade={bottomFade}>
         <img
+          ref={imageRef}
           src={imageSrc}
           alt={imageAlt}
           className="block w-full"
@@ -102,7 +110,7 @@ export default function ImageTextCTASection({
                 : contentAlign === "right"
                 ? "text-right"
                 : "text-center"
-            }`}
+            } ${isImageLoaded ? "opacity-100" : "pointer-events-none opacity-0"}`}
           >
             <h2
               ref={titleRef}
