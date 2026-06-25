@@ -3,9 +3,9 @@ import { FaDiscord, FaXTwitter, FaYoutube, FaTiktok, FaInstagram } from "react-i
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-transparent mt-20">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-8">
-        <div className="flex items-center gap-6">
+    <footer className="border-t border-white/10 bg-transparent mt-2">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 sm:py-8">
+        <div className="flex items-center gap-2 sm:gap-6">
           <Link
             href="https://discord.com"
             target="_blank"
@@ -13,7 +13,7 @@ export default function Footer() {
             className="text-gray-400 transition hover:text-white"
             title="Discord"
           >
-            <FaDiscord className="h-5 w-5" />
+            <FaDiscord className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
 
           <Link
@@ -23,7 +23,7 @@ export default function Footer() {
             className="text-gray-400 transition hover:text-white"
             title="X"
           >
-            <FaXTwitter className="h-5 w-5" />
+            <FaXTwitter className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
 
           <Link
@@ -33,7 +33,7 @@ export default function Footer() {
             className="text-gray-400 transition hover:text-white"
             title="YouTube"
           >
-            <FaYoutube className="h-5 w-5" />
+            <FaYoutube className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
 
           <Link
@@ -43,7 +43,7 @@ export default function Footer() {
             className="text-gray-400 transition hover:text-white"
             title="TikTok"
           >
-            <FaTiktok className="h-5 w-5" />
+            <FaTiktok className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
 
           <Link
@@ -53,11 +53,11 @@ export default function Footer() {
             className="text-gray-400 transition hover:text-white"
             title="Instagram"
           >
-            <FaInstagram className="h-5 w-5" />
+            <FaInstagram className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
         </div>
 
-        <div className="text-right text-sm text-gray-400">
+        <div className="text-right text-xs text-gray-400 sm:text-sm">
           <p>
             Contact:{" "}
             <a

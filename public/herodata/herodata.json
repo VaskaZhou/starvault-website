@@ -294,6 +294,293 @@
                 ["A", "A"],
                 ["A", "A"]
             ]
+        },
+        {
+        "id": 8,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 9,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 10,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 11,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 12,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 13,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
+        },
+        {
+        "id": 14,
+        "name": "Lt C.Jones",
+        "faction": "SI-9",
+        "class": "Support",
+    
+        "story_short": "A",
+        "story_long": "A",
+    
+        "stats": {
+            "attack_type": "A",
+            "speed": 1,
+            "armor": 1,
+            "damage": 1
+        },
+    
+        "primary_attack": {
+            "name": "A",
+            "description": "A"
+        },
+    
+        "skills": [
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            },
+            {
+            "name": "A",
+            "description": "A"
+            }
+        ],
+            "mastery": [
+                ["A", "A"],
+                ["A", "A"],
+                ["A", "A"]
+            ]
         }
 
     

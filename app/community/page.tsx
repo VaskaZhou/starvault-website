@@ -2,8 +2,8 @@ import ImageTextCTASection from "../components/ImageTextCTASection";
 
 export default function CommunityPage() {
   return (
-    <main className="flex w-full flex-1 flex-col justify-center px-0 py-0">
-      <section className="w-full space-y-2">
+    <main className="flex w-full flex-1 flex-col justify-start px-0 py-0">
+      <section className="w-full space-y-3 py-0">
         <ImageTextCTASection
           imageSrc="/mainpage/image/TournamentPosterbg.png"
           imageAlt="Titan Arena"
@@ -25,7 +25,7 @@ export default function CommunityPage() {
             { label: "Creator Kit", href: "https://drive.google.com/drive/folders/1kFXrvGUwdOO08bAIZWEDMGjMxJRfW0Ub?usp=sharing" },
           ]}
           contentAlign="right"
-          overlayBottomClassName = "bottom-18"
+          //overlayBottomClassName = "bottom-18"
         />
 
         <ImageTextCTASection
@@ -36,7 +36,7 @@ export default function CommunityPage() {
           buttonLabel="Starvault Discord"
           buttonHref="https://discord.com/invite/starvaultvr"
           contentAlign="left"
-          overlayBottomClassName = "bottom-2"
+          //overlayBottomClassName = "bottom-2"
         />
       </section>
     </main>

@@ -33,7 +33,7 @@ export default function ImageTextCTASection({
   topFade = true,
   bottomFade = true,
   contentAlign = "center",
-  overlayBottomClassName = "bottom-32",
+  overlayBottomClassName = "bottom-0 sm:bottom-0 lg:bottom-32",
   overlayClassName = "",
 }: ImageTextCTASectionProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -100,11 +100,11 @@ export default function ImageTextCTASection({
       </MediaWithFade>
 
       <div
-        className={`absolute inset-x-0 z-20 flex justify-center pb-14 ${overlayBottomClassName} ${overlayClassName}`}
+        className={`absolute inset-x-0 z-20 flex justify-center pb-6 ${overlayBottomClassName} ${overlayClassName}`}
       >
-        <div className="w-full max-w-8xl px-16">
+        <div className="w-full max-w-8xl px-3 sm:px-10 lg:px-16">
           <div
-            className={`mx-auto max-w-8xl space-y-10 px-8 py-8 ${
+            className={`mx-auto max-w-8xl space-y-0 px-4 py-0 sm:space-y-8 sm:px-6 sm:py-6 lg:space-y-10 lg:px-8 lg:py-8 ${
               contentAlign === "left"
                 ? "text-left"
                 : contentAlign === "right"
@@ -114,16 +114,16 @@ export default function ImageTextCTASection({
           >
             <h2
               ref={titleRef}
-              className={`text-6xl font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_3px_10px_rgba(0,0,0,0.7)] transition-all duration-1000 ${
+              className={`text-lg font-semibold uppercase leading-tight tracking-[0.12em] text-white [text-shadow:0_3px_10px_rgba(0,0,0,0.7)] transition-all duration-1000 sm:text-5xl sm:tracking-[0.18em] lg:text-6xl lg:tracking-[0.22em] ${
                 isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
               }`}
             >
               {title}
             </h2>
-            <p className="mt-4 text-2xl leading-7 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">{description}</p>
+            <p className="mt-2 text-sm leading-4 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.6)] sm:mt-4 sm:text-xl sm:leading-7 lg:text-2xl">{description}</p>
             {resolvedButtons.length > 0 && (
               <div
-                className={`mt-6 flex flex-wrap gap-4 ${
+                className={`mt-3 flex flex-wrap gap-3 sm:mt-6 sm:gap-4 ${
                   contentAlign === "left"
                     ? "justify-start"
                     : contentAlign === "right"
@@ -137,7 +137,7 @@ export default function ImageTextCTASection({
                     href={button.href}
                     className="
                       inline-flex items-center justify-center
-                      rounded-lg px-7 py-3 text-2xl font-semibold text-white
+                      rounded-lg px-4 py-2 text-sm font-semibold text-white
                       [text-shadow:0_2px_6px_rgba(0,0,0,0.75)]
                       border border-white
                       bg-transparent
@@ -145,6 +145,7 @@ export default function ImageTextCTASection({
                       hover:-translate-y-0.5
                       hover:border-blue-200
                       hover:shadow-[0_0_10px_rgba(59,130,246,0.35)]
+                      sm:px-6 sm:py-2.5 sm:text-xl lg:px-7 lg:py-3 lg:text-2xl
                     "
                   >
                     {button.label}

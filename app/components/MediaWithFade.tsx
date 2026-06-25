@@ -10,8 +10,8 @@ export default function MediaWithFade({
   children,
   topFade = false,
   bottomFade = false,
-  topFadeHeight = "h-[400px]",
-  bottomFadeHeight = "h-[400px]",
+  topFadeHeight = "h-[100px] sm:h-[280px] lg:h-[400px]",
+  bottomFadeHeight = "h-[100px] sm:h-[280px] lg:h-[400px]",
 }: MediaWithFadeProps) {
   return (
     <div className="relative overflow-hidden rounded-none">

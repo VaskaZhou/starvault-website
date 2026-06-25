@@ -66,27 +66,27 @@ export default function HeroesPage() {
 
   return (
     <main className="min-h-[calc(100vh-73px)] bg-[#070b14] text-white">
-      <section className="mx-auto max-w-7xl px-6 pb-16 pt-32">
+      <section className="mx-auto max-w-7xl px-3 pb-10 pt-14 sm:px-6 sm:pb-16 sm:pt-32">
         <div className="text-center">
-          <h1 className="text-5xl font-semibold uppercase tracking-[0.24em] text-white sm:text-6xl">
+          <h1 className="text-2xl font-semibold uppercase tracking-[0.12em] text-white sm:text-5xl sm:tracking-[0.2em] lg:text-6xl lg:tracking-[0.24em]">
             Choose Your Hero
           </h1>
-          <p className="text-2xl mt-4 leading-7 text-white/80">
-            Unleash incredible abilities and devastating ultimates on your way to victory.
+          <p className="mt-3 text-sm leading-5 text-white/80 sm:mt-4 sm:text-xl sm:leading-7 lg:text-2xl">
+            Unleash incredible abilities and ultimates on your way to victory.
           </p>
         </div>
 
-        <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-4 pl-10 backdrop-blur-sm">
+        <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm sm:mt-10 sm:p-4 sm:pl-10">
 
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
+          <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
             <div className="flex items-center justify-between">
-                <h2 className="text-xl font-semibold uppercase tracking-[0.22em] text-white">
+                <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-white sm:text-xl sm:tracking-[0.22em]">
                 Filter Heroes
                 </h2>
             </div>
-            <div className="flex items-center gap-6">
-              <p className="text-sm uppercase tracking-[0.22em] text-white/60">Class</p>
-              <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-6">
+              <p className="text-xs uppercase tracking-[0.14em] text-white/60 sm:text-sm sm:tracking-[0.22em]">Class</p>
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 {classOptions.map((option) => {
                   const active = selectedClass === option;
                   return (
@@ -113,9 +113,9 @@ export default function HeroesPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-6">
-              <p className="text-sm uppercase tracking-[0.22em] text-white/60">Attack Type</p>
-              <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-6">
+              <p className="text-xs uppercase tracking-[0.14em] text-white/60 sm:text-sm sm:tracking-[0.22em]">Attack Type</p>
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 {attackOptions.map((option) => {
                   const active = selectedAttack === option;
                   return (
@@ -144,7 +144,7 @@ export default function HeroesPage() {
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-10 grid grid-cols-2 gap-5 sm:mt-12 sm:grid-cols-3 lg:grid-cols-5">
           {filteredHeroes.map((hero) => (
             <Link
               key={hero.id}

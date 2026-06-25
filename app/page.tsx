@@ -47,10 +47,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex w-full flex-1 flex-col justify-center px-0 py-0">
-      <section className="w-full space-y-2">
+    <main className="flex w-full flex-1 flex-col justify-start px-0 py-0">
+      <section className="w-full space-y-3">
         <div className="relative">
-          <MediaWithFade topFade={false} bottomFade={true} bottomFadeHeight="h-[800px]">
+          <MediaWithFade topFade={false} bottomFade={true} bottomFadeHeight="h-[280px] sm:h-[520px] lg:h-[800px]">
             <video
               ref={videoRef}
               className="block w-full"
