@@ -161,8 +161,8 @@ export default function HeroesPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-2">
                 <div className="flex items-center justify-between rounded-xl bg-black/30 px-3 py-2 backdrop-blur-sm opacity-0 transition duration-300 group-hover:opacity-100">
-                  <span className="text-sm font-semibold text-white">{hero.name}</span>
-                  <span className="text-xs uppercase tracking-[0.18em] text-white/70 text-right">
+                  <span className="min-w-0 pr-2 text-xs font-semibold text-white sm:text-sm">{hero.name}</span>
+                  <span className="block max-w-[42%] truncate text-[9px] uppercase tracking-[0.1em] text-white/70 text-right sm:max-w-[48%] sm:text-xs sm:tracking-[0.18em]">
                     {hero.class}
                   </span>
                 </div>
