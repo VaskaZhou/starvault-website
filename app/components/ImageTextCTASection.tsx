@@ -87,13 +87,13 @@ export default function ImageTextCTASection({
       : [];
 
   return (
-    <section className="relative mt-0">
+    <section className="relative mt-0 w-full overflow-hidden">
       <MediaWithFade topFade={topFade} bottomFade={bottomFade}>
         <img
           ref={imageRef}
           src={imageSrc}
           alt={imageAlt}
-          className="block w-full"
+          className="relative left-1/2 block w-[160vw] max-w-none -translate-x-1/2 object-cover object-center md:left-0 md:w-full md:max-w-full md:translate-x-0"
           onLoad={() => setIsImageLoaded(true)}
           onError={() => setIsImageLoaded(true)}
         />
